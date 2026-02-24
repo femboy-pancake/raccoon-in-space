@@ -1,28 +1,29 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class dangerousObjectsScript : MonoBehaviour
+public class teleporterScript : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
 
-
-    private void OnTriggerEnter2D(Collider2D Other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (Other.tag == "Player")
+        if (other.tag == "Player")
         {
+            SceneManager.LoadScene("level 2");
 
-             Other.transform.position = new Vector3(-13.15f, -4.41f, 0);
         }
+
+
     }
-    
 }

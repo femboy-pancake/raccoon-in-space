@@ -12,7 +12,7 @@ public class playerJumpScript : MonoBehaviour
     void Update()
     {
 
-        Debug.DrawRay(transform.position, Vector2.down * 0.5f, Color.red);
+        Debug.DrawRay(transform.position, Vector2.down * 0.8f, Color.red);
 
         if (Input.GetKeyDown(KeyCode.Space) && GetIsFloor())
         {
@@ -21,9 +21,9 @@ public class playerJumpScript : MonoBehaviour
         }
     }
 
-    private bool GetIsFloor()//
+    private bool GetIsFloor()
     {
-        return Physics2D.Raycast(transform.position, Vector2.down, 0.5f, LayerMask.GetMask("jumpable surfance"));
+        return Physics2D.Raycast(transform.position, Vector2.down, 1f, LayerMask.GetMask("jumpable surfance"));
 
     }
 

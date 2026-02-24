@@ -138,17 +138,21 @@ TextureImporter:
       name: best art Ive done_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 31
-        width: 18
-        height: 18
+        x: 16
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 8, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: b1e3f50bbaf5e1e10800000000000000
       internalID: 2170277261442235931
@@ -160,17 +164,21 @@ TextureImporter:
       name: best art Ive done_1
       rect:
         serializedVersion: 2
-        x: 47
-        y: 31
-        width: 17
-        height: 18
+        x: 48
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 8.5, y: 8}
+        - {x: -7.5, y: 8}
+        - {x: -7.5, y: -8}
+        - {x: 8.5, y: -8}
+      tessellationDetail: 0
       bones: []
       spriteID: 0a13398d9aacaff90800000000000000
       internalID: -6918995046669536864
@@ -182,17 +190,21 @@ TextureImporter:
       name: best art Ive done_2
       rect:
         serializedVersion: 2
-        x: 14
+        x: 13
         y: 0
-        width: 20
-        height: 18
+        width: 22
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 10, y: 3.5}
+        - {x: -10, y: 3.5}
+        - {x: -10, y: -5.5}
+        - {x: 10, y: -5.5}
+      tessellationDetail: 0
       bones: []
       spriteID: 616d34452199035c0800000000000000
       internalID: -4237718945353443818
@@ -204,17 +216,21 @@ TextureImporter:
       name: best art Ive done_3
       rect:
         serializedVersion: 2
-        x: 47
+        x: 48
         y: 0
-        width: 17
-        height: 17
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 8.5, y: 7.5}
+        - {x: -7.5, y: 7.5}
+        - {x: -7.5, y: -8.5}
+        - {x: 8.5, y: -8.5}
+      tessellationDetail: 0
       bones: []
       spriteID: 2070fd2d28b0e5b50800000000000000
       internalID: 6583712361773729538
@@ -226,7 +242,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e0105c1b43e159b4281d22e6bdb78baa
     internalID: 0
     vertices: []
     indices: 

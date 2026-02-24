@@ -21,7 +21,8 @@ public class PlayerScript : MonoBehaviour
             transform.Translate(Vector3.right * playerSpeed * Time.deltaTime);
         }
 
-
+        
+        
 
     }
 }
