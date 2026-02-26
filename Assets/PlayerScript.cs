@@ -6,10 +6,10 @@ public class PlayerScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
+        
     }
 
-    // Update is called once per frame
+    // makes so the player can walk left and right
     void Update()
     {
         if (Input.GetKey(KeyCode.A))
@@ -22,7 +22,14 @@ public class PlayerScript : MonoBehaviour
         }
 
         
-        
 
+
+    }
+    //makes so player don't die when spawning in a new scene
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+
+        transform.position = new Vector3(-13.15f, -4.41f, 0);
     }
 }

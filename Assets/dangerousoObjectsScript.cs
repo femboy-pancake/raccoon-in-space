@@ -15,7 +15,7 @@ public class dangerousObjectsScript : MonoBehaviour
     }
 
 
-
+    //if player gets hit, teleports to beginning of level
     private void OnTriggerEnter2D(Collider2D Other)
     {
         if (Other.tag == "Player")
