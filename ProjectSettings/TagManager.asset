@@ -6,6 +6,8 @@ TagManager:
   tags:
   - jumpable surfance
   - teleport
+  - darkness tile
+  - lightbulb
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - UI
   - jumpable surfance
   - teleport
-  - 
-  - 
+  - darkness tile
+  - lightbulb
   - 
   - 
   - 
