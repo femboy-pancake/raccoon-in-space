@@ -8,6 +8,8 @@ TagManager:
   - teleport
   - darkness tile
   - lightbulb
+  - gravity gun
+  - ladder
   layers:
   - Default
   - TransparentFX
@@ -19,8 +21,8 @@ TagManager:
   - teleport
   - darkness tile
   - lightbulb
-  - 
-  - 
+  - gravity gun
+  - ladder
   - 
   - 
   - 
