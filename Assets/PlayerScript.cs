@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
+    public PlayerScript PriorToLevel3;
+    public GravityRacocoonScript GravityScript;
     public float playerSpeed = 1.0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,6 +32,19 @@ public class PlayerScript : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
 
-        transform.position = new Vector3(-13.15f, -4.41f, 0);
+       // transform.position = new Vector3(-13.15f, -4.41f, 0);
+    }
+
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "gravity gun")
+        {
+            GravityScript.enabled = true;
+            PriorToLevel3.enabled = false;
+            Destroy(other.gameObject);
+        }
+
+
     }
 }
