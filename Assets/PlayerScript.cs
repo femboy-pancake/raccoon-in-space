@@ -5,6 +5,7 @@ public class PlayerScript : MonoBehaviour
     public PlayerScript PriorToLevel3;
     public GravityRacocoonScript GravityScript;
     public float playerSpeed = 1.0f;
+    public bool isVertical = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,16 +17,42 @@ public class PlayerScript : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(Vector3.left * playerSpeed * Time.deltaTime);
+            if (isVertical == false)
+            {
+                transform.Translate(Vector3.left * playerSpeed * Time.deltaTime);
+
+            }
+
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(Vector3.right * playerSpeed * Time.deltaTime);
+
+            if (isVertical == false)
+            {
+                transform.Translate(Vector3.right * playerSpeed * Time.deltaTime);
+
+            }
+
+
         }
+        if (Input.GetKey(KeyCode.W))
+        {
 
-        
+            if (isVertical == true)
+            {
+                transform.Translate(Vector3.up * playerSpeed * Time.deltaTime);
+            }
 
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
 
+            if (isVertical == true)
+            {
+                transform.Translate(Vector3.down * playerSpeed * Time.deltaTime);
+            }
+
+        }
     }
     //makes so player don't die when spawning in a new scene
     private void Awake()
@@ -41,7 +68,7 @@ public class PlayerScript : MonoBehaviour
         if (other.tag == "gravity gun")
         {
             GravityScript.enabled = true;
-            PriorToLevel3.enabled = false;
+            //PriorToLevel3.enabled = false;
             Destroy(other.gameObject);
         }
 
