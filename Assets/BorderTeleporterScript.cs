@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class BorderTeleporterScript : MonoBehaviour
 {
+    public Light2D EnableLight;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,8 +21,9 @@ public class BorderTeleporterScript : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-
+            EnableLight = other.GetComponent<Light2D>();
             SceneManager.LoadScene("level 4");
+            EnableLight.enabled = false;
         }
     }
 }

@@ -6,6 +6,8 @@ public class PlayerScript : MonoBehaviour
     public GravityRacocoonScript GravityScript;
     public float playerSpeed = 1.0f;
     public bool isVertical = false;
+    public GameObject Graphics;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,6 +22,7 @@ public class PlayerScript : MonoBehaviour
             if (isVertical == false)
             {
                 transform.Translate(Vector3.left * playerSpeed * Time.deltaTime);
+                Graphics.GetComponent<SpriteRenderer>().flipX = true;
 
             }
 
@@ -30,6 +33,7 @@ public class PlayerScript : MonoBehaviour
             if (isVertical == false)
             {
                 transform.Translate(Vector3.right * playerSpeed * Time.deltaTime);
+                Graphics.GetComponent<SpriteRenderer>().flipX = false;
 
             }
 
