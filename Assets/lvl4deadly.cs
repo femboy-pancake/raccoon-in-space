@@ -6,7 +6,8 @@ public class lvl4deadly : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        playerjumpscript = GetComponent<playerJumpScript>();
+        playerjumpscript = GameObject.Find("Player (2)").GetComponent<playerJumpScript>();
+        
     }
 
     // Update is called once per frame
