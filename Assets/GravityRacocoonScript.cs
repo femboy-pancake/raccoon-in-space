@@ -5,7 +5,7 @@ public class GravityRacocoonScript : MonoBehaviour
     public float playerSpeed = 8.0f;
     PlayerScript playerscript;
     public Transform playerSprite;
-    playerJumpScript playerjumpscript;
+    public playerJumpScript playerjumpscript;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
