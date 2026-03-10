@@ -6,11 +6,15 @@ public class GravityRacocoonScript : MonoBehaviour
     PlayerScript playerscript;
     public Transform playerSprite;
     public playerJumpScript playerjumpscript;
+    private PolygonCollider2D polygoncollider2D;
+    public BoxCollider2D boxcollider2D;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         playerscript = GetComponent<PlayerScript>();
         playerjumpscript = GetComponent<playerJumpScript>();
+        polygoncollider2D = GetComponent<PolygonCollider2D>();
     }
 
     // Update is called once per frame
@@ -45,6 +49,7 @@ public class GravityRacocoonScript : MonoBehaviour
             //playerSprite.transform.localScale(1, 1, -1);
             //transform.Rotate(0, 0, 180);
             playerSprite.rotation = Quaternion.Euler(0, 0, 180);
+            
             playerjumpscript.jumpableSurface = Vector2.up;
         }
         
@@ -54,6 +59,7 @@ public class GravityRacocoonScript : MonoBehaviour
             Physics2D.gravity = new Vector2(0, -9.8f);
             playerscript.isVertical = false;
             playerSprite.rotation = Quaternion.Euler(0, 0, 0);
+
             playerjumpscript.jumpableSurface = Vector2.down;
         }
         
