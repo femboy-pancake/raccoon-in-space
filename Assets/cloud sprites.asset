@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: best art Ive done_0
+  m_Name: cloud sprites
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 2170277261442235931, guid: d3f24ff7e670387418a5b645c400b30c, type: 3}
-  m_Color: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 3bf1db5f684820242a9ef7e41b4a7edc, type: 3}
+  m_Color: {r: 0.26415092, g: 0.25044498, b: 0.25044498, a: 1}
   m_Transform:
     e00: 1
     e01: 0
