@@ -27,8 +27,8 @@ public class GravityRacocoonScript : MonoBehaviour
         {
             Physics2D.gravity = new Vector2(-9.8f, 0);
             //transform.Rotate(0, 0, -90);
-            //playerSprite.rotation = Quaternion.Euler(0, 0, -90);
-            gameObject.transform.rotation = Quaternion.Euler(0, 0, -90);
+            playerSprite.rotation = Quaternion.Euler(0, 0, -90);
+           // gameObject.transform.rotation = Quaternion.Euler(0, 0, -90);
             playerscript.isVertical = true;
             playerjumpscript.jumpableSurface = Vector2.left;
             //playerSprite.rotation = Quaternion.Euler(0, 0, -90);
@@ -39,9 +39,9 @@ public class GravityRacocoonScript : MonoBehaviour
         {
             Physics2D.gravity = new Vector2(9.8f, 0);
             playerscript.isVertical = true;
-            //playerSprite.rotation = Quaternion.Euler(0, 0, 90 );
-            //playerSprite.rotation = Quaternion.Euler(0, 0, 90);
-            gameObject.transform.rotation = Quaternion.Euler(0, 0, 90);
+           
+           playerSprite.rotation = Quaternion.Euler(0, 0, 90);
+            //  gameObject.transform.rotation = Quaternion.Euler(0, 0, 90);
             playerjumpscript.jumpableSurface = Vector2.right;
         }
         
@@ -52,8 +52,8 @@ public class GravityRacocoonScript : MonoBehaviour
             playerscript.isVertical = false;
             //playerSprite.transform.localScale(1, 1, -1);
             //transform.Rotate(0, 0, 180);
-            //playerSprite.rotation = Quaternion.Euler(0, 0, 180);
-            gameObject.transform.rotation = Quaternion.Euler(0, 0, 180);
+            playerSprite.rotation = Quaternion.Euler(0, 0, 180);
+            //  gameObject.transform.rotation = Quaternion.Euler(0, 0, 180);
 
             playerjumpscript.jumpableSurface = Vector2.up;
         }
@@ -63,8 +63,8 @@ public class GravityRacocoonScript : MonoBehaviour
         {
             Physics2D.gravity = new Vector2(0, -9.8f);
             playerscript.isVertical = false;
-            //playerSprite.rotation = Quaternion.Euler(0, 0, 0);
-            gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+            playerSprite.rotation = Quaternion.Euler(0, 0, 0);
+            // gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
 
             playerjumpscript.jumpableSurface = Vector2.down;
         }

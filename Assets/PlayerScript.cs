@@ -6,6 +6,7 @@ public class PlayerScript : MonoBehaviour
     public GravityRacocoonScript GravityScript;
     public float playerSpeed = 1.0f;
     public bool isVertical = false;
+    public bool isVertical2 = false;
     public GameObject Graphics;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
