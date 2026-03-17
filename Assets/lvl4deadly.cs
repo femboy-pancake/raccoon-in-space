@@ -19,14 +19,15 @@ public class lvl4deadly : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D Other)
     {
         if (Other.tag == "Player")
-        {   
-            Other.gameObject.transform.position = new Vector3(-14.27f, -3.45f, 8.94f);
-            Other.gameObject.transform.parent.position = new Vector3(-14.27f, -3.45f, 8.94f);
-            Physics2D.gravity = new Vector2(0, -9.8f);
-          
-            Other.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
-            Other.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
-            playerjumpscript.jumpableSurface = Vector2.down;
+        {
+            /*  Other.gameObject.transform.position = new Vector3(-14.27f, -3.45f, 8.94f);
+              Other.gameObject.transform.parent.position = new Vector3(-14.27f, -3.45f, 8.94f);
+              Physics2D.gravity = new Vector2(0, -9.8f);
+
+              Other.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+              Other.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+              playerjumpscript.jumpableSurface = Vector2.down; */
+            GameManager.main.RestartLevel();
             
         }
     }

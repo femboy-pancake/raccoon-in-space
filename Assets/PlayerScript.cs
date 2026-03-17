@@ -6,7 +6,7 @@ public class PlayerScript : MonoBehaviour
     public GravityRacocoonScript GravityScript;
     public float playerSpeed = 1.0f;
     public bool isVertical = false;
-    public bool isVertical2 = false;
+
     public GameObject Graphics;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -62,9 +62,10 @@ public class PlayerScript : MonoBehaviour
     //makes so player don't die when spawning in a new scene
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        
 
-       // transform.position = new Vector3(-13.15f, -4.41f, 0);
+
+       
     }
 
 
