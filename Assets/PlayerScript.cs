@@ -5,8 +5,9 @@ public class PlayerScript : MonoBehaviour
     public PlayerScript PriorToLevel3;
     public GravityRacocoonScript GravityScript;
     public float playerSpeed = 1.0f;
-    public bool isVertical = false;
-
+    public bool isVerticalleft = false;
+    public bool isVerticalright = false;
+    public bool isUpsidedown = false;
     public GameObject Graphics;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,27 +16,38 @@ public class PlayerScript : MonoBehaviour
         
     }
 
+
     // makes so the player can walk left and right
     void Update()
     {
         if (Input.GetKey(KeyCode.A))
         {
-            if (isVertical == false)
+            if (isVerticalleft == false)
             {
                 transform.Translate(Vector3.left * playerSpeed * Time.deltaTime);
                 Graphics.GetComponent<SpriteRenderer>().flipX = true;
 
             }
 
+            if (isUpsidedown == true)
+            {
+                Graphics.GetComponent<SpriteRenderer>().flipX = false;
+            }
+
         }
         if (Input.GetKey(KeyCode.D))
         {
 
-            if (isVertical == false)
+            if (isVerticalleft == false)
             {
                 transform.Translate(Vector3.right * playerSpeed * Time.deltaTime);
                 Graphics.GetComponent<SpriteRenderer>().flipX = false;
 
+
+                if (isUpsidedown == true)
+                {
+                    Graphics.GetComponent<SpriteRenderer>().flipX = true;
+                }
             }
 
 
@@ -43,18 +55,31 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
 
-            if (isVertical == true)
+            if (isVerticalleft == true)
             {
                 transform.Translate(Vector3.up * playerSpeed * Time.deltaTime);
+                Graphics.GetComponent<SpriteRenderer>().flipX = true;
             }
 
+            if (isVerticalright == true)
+            {
+                transform.Translate(Vector3.up * playerSpeed * Time.deltaTime);
+                Graphics.GetComponent<SpriteRenderer>().flipX = false;
+            }
         }
         if (Input.GetKey(KeyCode.S))
         {
 
-            if (isVertical == true)
+            if (isVerticalleft == true)
             {
                 transform.Translate(Vector3.down * playerSpeed * Time.deltaTime);
+                Graphics.GetComponent<SpriteRenderer>().flipX = false;
+            }
+
+            if (isVerticalright == true)
+            {
+                transform.Translate(Vector3.down * playerSpeed * Time.deltaTime);
+                Graphics.GetComponent<SpriteRenderer>().flipX = true;
             }
 
         }

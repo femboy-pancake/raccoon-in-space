@@ -29,7 +29,9 @@ public class GravityRacocoonScript : MonoBehaviour
             //transform.Rotate(0, 0, -90);
             playerSprite.rotation = Quaternion.Euler(0, 0, -90);
            // gameObject.transform.rotation = Quaternion.Euler(0, 0, -90);
-            playerscript.isVertical = true;
+            playerscript.isVerticalleft = true;
+            playerscript.isVerticalright = false;
+            playerscript.isUpsidedown = false;
             playerjumpscript.jumpableSurface = Vector2.left;
             //playerSprite.rotation = Quaternion.Euler(0, 0, -90);
         }
@@ -38,9 +40,10 @@ public class GravityRacocoonScript : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             Physics2D.gravity = new Vector2(9.8f, 0);
-            playerscript.isVertical = true;
-           
-           playerSprite.rotation = Quaternion.Euler(0, 0, 90);
+            playerscript.isVerticalleft = false;
+            playerscript.isVerticalright = true;
+            playerscript.isUpsidedown = false;
+            playerSprite.rotation = Quaternion.Euler(0, 0, 90);
             //  gameObject.transform.rotation = Quaternion.Euler(0, 0, 90);
             playerjumpscript.jumpableSurface = Vector2.right;
         }
@@ -49,7 +52,8 @@ public class GravityRacocoonScript : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             Physics2D.gravity = new Vector2(0, 9.8f);
-            playerscript.isVertical = false;
+            playerscript.isUpsidedown = true;
+            playerscript.isVerticalleft = false;
             //playerSprite.transform.localScale(1, 1, -1);
             //transform.Rotate(0, 0, 180);
             playerSprite.rotation = Quaternion.Euler(0, 0, 180);
@@ -62,7 +66,8 @@ public class GravityRacocoonScript : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             Physics2D.gravity = new Vector2(0, -9.8f);
-            playerscript.isVertical = false;
+            playerscript.isVerticalleft = false;
+            playerscript.isUpsidedown = false;
             playerSprite.rotation = Quaternion.Euler(0, 0, 0);
             // gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
 
