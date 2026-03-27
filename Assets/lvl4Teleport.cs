@@ -1,16 +1,19 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class lvl4Teleport : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (other.tag == "Player")
+        {
+
+            Physics2D.gravity = new Vector2(0, -9.8f);
+            SceneManager.LoadScene("level 5");
+            other.transform.position = new Vector3(-14.27f, -3.45f, 8.94f);
+
+
+        }
     }
 }

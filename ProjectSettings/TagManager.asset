@@ -10,6 +10,7 @@ TagManager:
   - lightbulb
   - gravity gun
   - ladder
+  - DestroyableWall
   layers:
   - Default
   - TransparentFX

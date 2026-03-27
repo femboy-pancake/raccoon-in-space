@@ -34,6 +34,8 @@ public class GravityRacocoonScript : MonoBehaviour
             playerscript.isUpsidedown = false;
             playerjumpscript.jumpableSurface = Vector2.left;
             //playerSprite.rotation = Quaternion.Euler(0, 0, -90);
+
+            
         }
         
 

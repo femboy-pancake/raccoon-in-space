@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public PlayerScript playerscript;
     public Rigidbody2D ridgidbody;
+    public GameObject collectobject;
+    public GameObject[] DestroyableWall;
 
     private void Start()
     {
@@ -28,6 +30,11 @@ public class GameManager : MonoBehaviour
         playerscript.isVerticalright = false;
         playerscript.isUpsidedown = false;
         ridgidbody.linearVelocity = Vector3.zero;
-
+        collectobject.SetActive(true);
+        foreach (GameObject wall in DestroyableWall)
+        {
+            wall.GetComponent<BoxCollider2D>().enabled = true;
+            wall.GetComponent<SpriteRenderer>().enabled = true;
+        }
     }
 }
