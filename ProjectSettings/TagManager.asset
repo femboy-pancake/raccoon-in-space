@@ -11,6 +11,7 @@ TagManager:
   - gravity gun
   - ladder
   - DestroyableWall
+  - playermain
   layers:
   - Default
   - TransparentFX

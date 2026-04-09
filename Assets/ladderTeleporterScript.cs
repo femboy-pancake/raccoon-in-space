@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ladderTeleporterScript : MonoBehaviour
 {
-
+    public GameObject spawn;
     public Light2D EnableLight;
     void OnTriggerEnter2D(Collider2D other)
     {

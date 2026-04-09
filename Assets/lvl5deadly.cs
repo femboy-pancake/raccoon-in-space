@@ -1,0 +1,34 @@
+using UnityEngine;
+
+public class lvl5deadly : MonoBehaviour
+{
+    public playerJumpScript playerjumpscript;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        playerjumpscript = GameObject.Find("Player (2)").GetComponent<playerJumpScript>();
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D Other)
+    {
+        if (Other.tag == "Player")
+        {
+            /*  Other.gameObject.transform.position = new Vector3(-14.27f, -3.45f, 8.94f);
+              Other.gameObject.transform.parent.position = new Vector3(-14.27f, -3.45f, 8.94f);
+              Physics2D.gravity = new Vector2(0, -9.8f);
+
+              Other.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+              Other.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+              playerjumpscript.jumpableSurface = Vector2.down; */
+            GameManager.main.RestartLevel();
+
+        }
+    }
+}
