@@ -8,16 +8,28 @@ public class GameManager : MonoBehaviour
     public playerJumpScript playerjumpscript;
     public Transform spawnPosition;
     public GameObject player;
+    public GameObject graphics;
     public PlayerScript playerscript;
     public Rigidbody2D ridgidbody;
     public GameObject collectobject;
     public GameObject[] DestroyableWall;
+    public SpriteRenderer PlayerRenderer;
 
     private void Start()
     {
-        main = this;
-        //playerscript = GameObject.Find("player2").GetComponent<PlayerScript>();
+        if(main == null)
+        {
+            main = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        player = GameObject.Find("Player (2)");
+        graphics = GameObject.Find("graphics");
 
+        spawnPosition = GameObject.Find("SpawnPosition").transform;
     }
     public void RestartLevel()
     {
@@ -36,5 +48,17 @@ public class GameManager : MonoBehaviour
             wall.GetComponent<BoxCollider2D>().enabled = true;
             wall.GetComponent<SpriteRenderer>().enabled = true;
         }
+    }
+
+    private void Awake()
+    {
+        // public Transform playerSprite;
+        /*player = GameObject.Find("Player (2)");
+        graphics = GameObject.Find("graphics");
+        playerjumpscript = player.GetComponent<playerJumpScript>();
+        playerscript = player.GetComponent<PlayerScript>();
+        ridgidbody = player.GetComponent<Rigidbody2D>();
+        PlayerRenderer = graphics.GetComponent<SpriteRenderer>();*/
+
     }
 }

@@ -21,7 +21,7 @@ public class dangerousObjectsScript : MonoBehaviour
         if (Other.tag == "Player")
         {
 
-             Other.transform.position = new Vector3(-13.15f, -4.41f, 0);
+            GameManager.main.RestartLevel();
         }
     }
     

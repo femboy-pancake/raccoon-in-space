@@ -9,11 +9,20 @@ public class PlayerScript : MonoBehaviour
     public bool isVerticalright = false;
     public bool isUpsidedown = false;
     public GameObject Graphics;
+    static GameObject player;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        if (player == null)
+        {
+            player = this.gameObject;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
 

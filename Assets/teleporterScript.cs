@@ -13,8 +13,8 @@ public class teleporterScript : MonoBehaviour
         if (other.tag == "Player")
         {
             SceneManager.LoadScene("level 2");
-            
-            other.transform.position = new Vector3(-13.15f, -4.41f, 0);
+
+            other.transform.parent.position = new Vector3(-13.15f, -4.41f, 0);
            // Thread.Sleep(TimeSpan.FromSeconds(0.5));
         }
 

@@ -15,7 +15,7 @@ public class ladderTeleporterScript : MonoBehaviour
             SceneManager.LoadScene("lighttest");
             EnableLight.enabled = true;
 
-            other.transform.position = new Vector3(12.34f, -4.42f, 9);
+            other.transform.parent.position = new Vector3(12.34f, -4.42f, 9);
 
 
             // Thread.Sleep(TimeSpan.FromSeconds(0.5));
@@ -23,4 +23,10 @@ public class ladderTeleporterScript : MonoBehaviour
 
 
     }
-}
+
+    private void Start()
+    {
+
+    }
+ }
+
