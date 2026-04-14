@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class lvl5deadly : MonoBehaviour
 {
-    public playerJumpScript playerjumpscript;
+    //public playerJumpScript playerjumpscript;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        playerjumpscript = GameObject.Find("Player (2)").GetComponent<playerJumpScript>();
+       // playerjumpscript = GameObject.Find("Player (2)").GetComponent<playerJumpScript>();
 
     }
 

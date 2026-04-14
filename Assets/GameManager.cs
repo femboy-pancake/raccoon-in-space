@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject collectobject;
     public GameObject[] DestroyableWall;
     public SpriteRenderer PlayerRenderer;
-
+   
     private void Start()
     {
         if(main == null)
@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
     {
         DestroyableWall = GameObject.FindGameObjectsWithTag("DestroyableWall");
         player.transform.position = spawnPosition.position;
+        graphics.transform.position = spawnPosition.position;
         player.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
         Physics2D.gravity = new Vector2(0, -9.8f);
         playerSprite.rotation = Quaternion.Euler(0, 0, 0);
@@ -76,5 +77,21 @@ public class GameManager : MonoBehaviour
         ridgidbody = player.GetComponent<Rigidbody2D>();
         PlayerRenderer = player.GetComponent<SpriteRenderer>();
         DestroyableWall = GameObject.FindGameObjectsWithTag("DestroyableWall");
+        collectobject = GameObject.Find("key");
     }
+
+    private void Update()
+    {
+        if (spawnPosition == null)
+        {
+            spawnPosition = GameObject.Find("SpawnPosition").transform;
+        }
+
+        if (collectobject == null)
+        {
+            collectobject = GameObject.Find("key");
+        }
+    }
+
+
 }

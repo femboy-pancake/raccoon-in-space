@@ -25,7 +25,7 @@ public class BorderTeleporterScript : MonoBehaviour
             Physics2D.gravity = new Vector2(0, -9.8f);
             SceneManager.LoadScene("level 4");
             EnableLight.enabled = false;
-            other.transform.position = new Vector3(-14.27f, -3.45f, 8.94f);
+            other.transform.position = new Vector3(-14.32f, -3.54f, 8.94f);
 
         }
     }
