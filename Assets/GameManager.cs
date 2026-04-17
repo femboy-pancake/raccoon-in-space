@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject collectobject;
     public GameObject[] DestroyableWall;
     public SpriteRenderer PlayerRenderer;
-   
+    public GameObject[] MoreClouds;
     private void Start()
     {
         if(main == null)
@@ -51,8 +51,9 @@ public class GameManager : MonoBehaviour
         playerscript.isVerticalright = false;
         playerscript.isUpsidedown = false;
         ridgidbody.linearVelocity = Vector3.zero;
+        MoreClouds = GameObject.FindGameObjectsWithTag("spawncloud");
 
-        if(collectobject != null)
+        if (collectobject != null)
             collectobject.SetActive(true);
 
         if (DestroyableWall != null)
@@ -61,6 +62,17 @@ public class GameManager : MonoBehaviour
             {
                 wall.GetComponent<BoxCollider2D>().enabled = true;
                 wall.GetComponent<SpriteRenderer>().enabled = true;
+            }
+        }
+
+
+        if (MoreClouds != null)
+        {
+            foreach (GameObject deadlyclouds in MoreClouds)
+            {
+                deadlyclouds.GetComponent<BoxCollider2D>().enabled = false;
+                deadlyclouds.GetComponent<SpriteRenderer>().enabled = false;
+                deadlyclouds.GetComponent<lvl4deadly>().enabled = false;
             }
         }
     }
@@ -78,6 +90,8 @@ public class GameManager : MonoBehaviour
         PlayerRenderer = player.GetComponent<SpriteRenderer>();
         DestroyableWall = GameObject.FindGameObjectsWithTag("DestroyableWall");
         collectobject = GameObject.Find("key");
+        
+
     }
 
     private void Update()

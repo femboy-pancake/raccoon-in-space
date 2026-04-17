@@ -857,6 +857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f46e0b8bc8b624c4ca5214ff01923adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  originalPos: {x: 0, y: 0, z: 0}
 --- !u!1 &295169764
 GameObject:
   m_ObjectHideFlags: 0
@@ -1569,6 +1570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f46e0b8bc8b624c4ca5214ff01923adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  originalPos: {x: 0, y: 0, z: 0}
 --- !u!1 &882666788
 GameObject:
   m_ObjectHideFlags: 0
@@ -2176,6 +2178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f46e0b8bc8b624c4ca5214ff01923adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  originalPos: {x: 0, y: 0, z: 0}
 --- !u!61 &1443459851
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4200,6 +4203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f46e0b8bc8b624c4ca5214ff01923adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  originalPos: {x: 0, y: 0, z: 0}
 --- !u!1 &1746200091
 GameObject:
   m_ObjectHideFlags: 0
@@ -4443,6 +4447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f46e0b8bc8b624c4ca5214ff01923adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  originalPos: {x: 0, y: 0, z: 0}
 --- !u!1 &2092248691
 GameObject:
   m_ObjectHideFlags: 0
@@ -4546,6 +4551,10 @@ PrefabInstance:
       propertyPath: LevelName
       value: level 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5512002737328247143, guid: 0683c47f78b9ac34aad3058e1ef9214e, type: 3}
+      propertyPath: PlayerRenderer
+      value: 
+      objectReference: {fileID: 2131133252}
     - target: {fileID: 6313193860084777674, guid: 0683c47f78b9ac34aad3058e1ef9214e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.13
@@ -5058,6 +5067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f46e0b8bc8b624c4ca5214ff01923adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  originalPos: {x: 0, y: 0, z: 0}
 --- !u!1001 &7284339593680760040
 PrefabInstance:
   m_ObjectHideFlags: 0

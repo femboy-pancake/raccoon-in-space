@@ -12,6 +12,7 @@ TagManager:
   - ladder
   - DestroyableWall
   - playermain
+  - spawncloud
   layers:
   - Default
   - TransparentFX
