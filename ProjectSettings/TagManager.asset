@@ -13,6 +13,7 @@ TagManager:
   - DestroyableWall
   - playermain
   - spawncloud
+  - button
   layers:
   - Default
   - TransparentFX
