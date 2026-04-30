@@ -14,6 +14,8 @@ TagManager:
   - playermain
   - spawncloud
   - button
+  - Evil Raccoon
+  - roof
   layers:
   - Default
   - TransparentFX

@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     public bool button1;
     public bool button2;
     public GameObject[] floor;
- 
+    public GameObject[] roof;
 
     private void Start()
     {
@@ -84,6 +84,14 @@ public class GameManager : MonoBehaviour
             floor.GetComponent<SpriteRenderer>().enabled = true;
         }
 
+
+
+        foreach (GameObject roof in roof)
+        {
+            roof.GetComponent<BoxCollider2D>().enabled = false;
+            roof.GetComponent<SpriteRenderer>().enabled = false;
+        }
+
     }
 
     private void Awake()
@@ -99,7 +107,7 @@ public class GameManager : MonoBehaviour
         PlayerRenderer = player.GetComponent<SpriteRenderer>();
         DestroyableWall = GameObject.FindGameObjectsWithTag("DestroyableWall");
         collectobject = GameObject.Find("key");
-        
+        roof = GameObject.FindGameObjectsWithTag("roof");
 
 
     }
@@ -114,6 +122,11 @@ public class GameManager : MonoBehaviour
         if (collectobject == null)
         {
             collectobject = GameObject.Find("key");
+        }
+
+        if (roof == null)
+        {
+            roof = GameObject.FindGameObjectsWithTag("roof");
         }
     }
 
