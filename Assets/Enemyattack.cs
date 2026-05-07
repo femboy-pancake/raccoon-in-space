@@ -4,25 +4,34 @@ using Unity.VisualScripting;
 using UnityEngine;
 public class Enemyattack : MonoBehaviour
 {
-    int attack = rng(5, 7);
-    GameObject thunderbolt;
+     
+   private float attack;
+    
+   public GameObject thunderbolt;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        attack = Random.Range(5, 10);
+        StartCoroutine(Wait(attack));
         
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        //between 5-10 sec make attack spawn randomly in X-angle
-       
-        Instantiate(thunderbolt, new Vector3(Random.Range(-8, -0.055f), 7, 0), Quaternion.identity);
+    
 
-    }
-    IEnumerator Wait()
+    
+    IEnumerator Wait(float sec)
     {
-        yield return new WaitForSeconds(5);
-        Random rnd = new Random();
+        //while Boss is alive, repeat attack between 5 and 10 seconds
+        while (true)
+        {
+        yield return new WaitForSeconds(sec);
+            
+        attack = Random.Range(5, 10);
+        Instantiate(thunderbolt, new Vector3(Random.Range(-12.93f, -0.055f), -0.36f, 0), Quaternion.identity);
+
+        }
     }
+
+
 }

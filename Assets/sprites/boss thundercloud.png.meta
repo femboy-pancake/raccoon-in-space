@@ -1,0 +1,519 @@
+fileFormatVersion: 2
+guid: 127188db7d72f9b4c8d4c08581b9591e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6274972460631121278
+    second: boss thundercloud_0
+  - first:
+      213: -105658503500893119
+    second: boss thundercloud_1
+  - first:
+      213: -5213931802309689639
+    second: boss thundercloud_2
+  - first:
+      213: -4732467587404273594
+    second: boss thundercloud_3
+  - first:
+      213: -6510119693222865712
+    second: boss thundercloud_4
+  - first:
+      213: -2437532291867931793
+    second: boss thundercloud_5
+  - first:
+      213: -7392371203948053694
+    second: boss thundercloud_6
+  - first:
+      213: -5446635797889248803
+    second: boss thundercloud_7
+  - first:
+      213: 6032826323366992168
+    second: boss thundercloud_8
+  - first:
+      213: -555995837483039328
+    second: boss thundercloud_9
+  - first:
+      213: 5494103226324780695
+    second: boss thundercloud_10
+  - first:
+      213: -3384329249061764365
+    second: boss thundercloud_11
+  - first:
+      213: 5356270137204231168
+    second: boss thundercloud_12
+  - first:
+      213: 5914211899358437743
+    second: boss thundercloud_13
+  - first:
+      213: -6050238901549993264
+    second: boss thundercloud_14
+  - first:
+      213: 4278742374093317296
+    second: boss thundercloud_15
+  - first:
+      213: -8748615673244152386
+    second: boss thundercloud_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss thundercloud_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 111
+        width: 38
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28229b41bc1dae8a0800000000000000
+      internalID: -6274972460631121278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss thundercloud_1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 111
+        width: 38
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 144745f9620a88ef0800000000000000
+      internalID: -105658503500893119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss thundercloud_2
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 111
+        width: 38
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9def73086a464a7b0800000000000000
+      internalID: -5213931802309689639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss thundercloud_3
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 111
+        width: 38
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648e7bd8dc5e25eb0800000000000000
+      internalID: -4732467587404273594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss thundercloud_4
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 111
+        width: 38
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d41d2091a867a5a0800000000000000
+      internalID: -6510119693222865712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss thundercloud_5
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 111
+        width: 38
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b0bae8b452c2ed0800000000000000
+      internalID: -2437532291867931793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss thundercloud_6
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 111
+        width: 38
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b79d47e85096990800000000000000
+      internalID: -7392371203948053694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss thundercloud_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 11
+        width: 38
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd192ed6999a964b0800000000000000
+      internalID: -5446635797889248803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss thundercloud_8
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 11
+        width: 38
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8295aebe397e8b350800000000000000
+      internalID: 6032826323366992168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss thundercloud_9
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 11
+        width: 38
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a54a3a4bb4b848f0800000000000000
+      internalID: -555995837483039328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss thundercloud_10
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 11
+        width: 38
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7968a6c76c9fe3c40800000000000000
+      internalID: 5494103226324780695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss thundercloud_11
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 11
+        width: 38
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f285ba9a727801d0800000000000000
+      internalID: -3384329249061764365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss thundercloud_13
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 11
+        width: 38
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f61e5ab3360831250800000000000000
+      internalID: 5914211899358437743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss thundercloud_14
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 11
+        width: 38
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d2fcda46cb390ca0800000000000000
+      internalID: -6050238901549993264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4869e91061005834290c4d762391b5d2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      boss thundercloud_0: -6274972460631121278
+      boss thundercloud_1: -105658503500893119
+      boss thundercloud_10: 5494103226324780695
+      boss thundercloud_11: -3384329249061764365
+      boss thundercloud_12: 5356270137204231168
+      boss thundercloud_13: 5914211899358437743
+      boss thundercloud_14: -6050238901549993264
+      boss thundercloud_15: 4278742374093317296
+      boss thundercloud_16: -8748615673244152386
+      boss thundercloud_2: -5213931802309689639
+      boss thundercloud_3: -4732467587404273594
+      boss thundercloud_4: -6510119693222865712
+      boss thundercloud_5: -2437532291867931793
+      boss thundercloud_6: -7392371203948053694
+      boss thundercloud_7: -5446635797889248803
+      boss thundercloud_8: 6032826323366992168
+      boss thundercloud_9: -555995837483039328
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
