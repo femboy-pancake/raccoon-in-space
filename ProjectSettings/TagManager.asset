@@ -16,6 +16,7 @@ TagManager:
   - button
   - Evil Raccoon
   - roof
+  - thunder
   layers:
   - Default
   - TransparentFX

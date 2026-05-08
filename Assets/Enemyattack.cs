@@ -11,7 +11,7 @@ public class Enemyattack : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        attack = Random.Range(5, 10);
+        attack = Random.Range(5, 7);
         StartCoroutine(Wait(attack));
         
     }
@@ -27,11 +27,14 @@ public class Enemyattack : MonoBehaviour
         {
         yield return new WaitForSeconds(sec);
             
-        attack = Random.Range(5, 10);
-        Instantiate(thunderbolt, new Vector3(Random.Range(-12.93f, -0.055f), -0.36f, 0), Quaternion.identity);
+        attack = Random.Range(5, 7);
+        Instantiate(thunderbolt, new Vector3(Random.Range(-12.93f, -0.63f), -0.36f, 0), Quaternion.identity);
 
         }
     }
+
+
+    
 
 
 }
