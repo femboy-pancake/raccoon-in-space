@@ -3,28 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 public class cloudDestroy : MonoBehaviour
 {
-    BoxCollider2D Thunderbolt;
+    BoxCollider2D thunderbolt;
     private float destroy;
+    private float timer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Thunderbolt = GetComponent<BoxCollider2D>();
 
 
-        if (Thunderbolt != null)
-        {
-           Thunderbolt.enabled = true;
-        }
+        thunderbolt = GetComponent<BoxCollider2D>();
 
+        thunderbolt.enabled = false;
+
+        StartCoroutine(Wait(timer));
 
 
         Destroy(gameObject, 2.9f);
     }
 
     // Update is called once per frame
-    void Update()
+    IEnumerator Wait(float sec)
     {
-        
+        yield return new WaitForSeconds(1.3f);
+        thunderbolt.enabled = true;
     }
-   
+
 }

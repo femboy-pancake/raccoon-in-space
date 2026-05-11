@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 4905613396099987642}
   - component: {fileID: 5655457856824572156}
   - component: {fileID: -1490914941082305361}
-  - component: {fileID: 264408458534607271}
+  - component: {fileID: 6846125254248667304}
+  - component: {fileID: 825969740826206000}
   m_Layer: 0
   m_Name: boss thundercloud warning_0
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 6769770824394456489}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.637447, y: -2.4089613, z: 0}
+  m_LocalPosition: {x: -20.789747, y: -2.1006532, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -124,8 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c69d84aab6961847a49e336b51dac64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!60 &264408458534607271
-PolygonCollider2D:
+--- !u!61 &6846125254248667304
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -154,11 +155,11 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.10373402, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -168,15 +169,18 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.7, y: 5}
-      - {x: -2, y: 4.5}
-      - {x: -2, y: 3.1000001}
-      - {x: -1.9, y: 3}
-      - {x: -1.7, y: 2.6000001}
-      - {x: 1.8000001, y: 2.6000001}
-      - {x: 2.2, y: 2.7}
-      - {x: 2.2, y: 3.7}
-      - {x: 1.5, y: 5}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 3.9834042, y: 10}
+  m_EdgeRadius: 0
+--- !u!114 &825969740826206000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6769770824394456489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb9d95b815eef04d88995aa2231f7e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerjumpscript: {fileID: 0}
