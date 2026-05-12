@@ -18,7 +18,7 @@ public class cloudDestroy : MonoBehaviour
         StartCoroutine(Wait(timer));
 
 
-        Destroy(gameObject, 2.9f);
+        Destroy(gameObject, 2.6f);
     }
 
     // Update is called once per frame

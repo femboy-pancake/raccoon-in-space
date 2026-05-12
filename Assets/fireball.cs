@@ -4,14 +4,15 @@ using Unity.VisualScripting;
 using UnityEngine;
 public class fireball : MonoBehaviour
 {
-
+    public float MaxAngle = 25;
+    public float minAngle = -25;
     private float attack;
 
     public GameObject Fireball;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        attack = Random.Range(10, 12);
+        attack = Random.Range(5, 7);
         StartCoroutine(Wait(attack));
 
     }
@@ -27,9 +28,10 @@ public class fireball : MonoBehaviour
         {
             yield return new WaitForSeconds(sec);
 
-            attack = Random.Range(5, 7);                  // fix so he moves on the x axes
-            Instantiate(Fireball, new Vector3(-17.3f, (Random.Range(4.44f, -17.43f)), 0f), Quaternion.identity);
-
+            attack = Random.Range(5, 10);                 
+            Instantiate(Fireball, new Vector3(11.77f, -3.8f, 0f), Quaternion.Euler(new Vector3(0, 0, Random.Range(MaxAngle = 0, minAngle = -16.5f))));
+           
+            //(Random.Range(4.44f, -3.95f)), 0f), Quaternion.identity);
         }
     }
 
