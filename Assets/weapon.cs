@@ -18,7 +18,7 @@ public class weapon : MonoBehaviour
     {
         if (Other.tag == "boss")
         {
-            Other.transform.GetComponent<boss>().TakeDamage(1);
+           //Other.transform.GetComponent<boss>().TakeDamage(1);
         }
     }
 }

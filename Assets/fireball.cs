@@ -12,7 +12,7 @@ public class fireball : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        attack = Random.Range(5, 7);
+        attack = Random.Range(3, 5);
         StartCoroutine(Wait(attack));
 
     }
@@ -28,8 +28,8 @@ public class fireball : MonoBehaviour
         {
             yield return new WaitForSeconds(sec);
 
-            attack = Random.Range(5, 10);                 
-            Instantiate(Fireball, new Vector3(11.77f, -3.8f, 0f), Quaternion.Euler(new Vector3(0, 0, Random.Range(MaxAngle = 0, minAngle = -16.5f))));
+            attack = Random.Range(3, 5 );                 
+            Instantiate(Fireball, new Vector3(11.77f, -3.8f, 0f), Quaternion.Euler(new Vector3(0, 0, Random.Range(MaxAngle = 0, minAngle = -20f))));
            
             //(Random.Range(4.44f, -3.95f)), 0f), Quaternion.identity);
         }

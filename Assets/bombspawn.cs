@@ -10,7 +10,7 @@ public class bombspawn : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        spawn = 1f;
+        spawn = 10f;
         StartCoroutine(Wait(spawn));
 
     }
@@ -26,8 +26,9 @@ public class bombspawn : MonoBehaviour
         {
             yield return new WaitForSeconds(sec);
 
-            spawn = 1f;
-            
+            spawn = 10f;
+
+            Instantiate(bomb, transform.position, Quaternion.identity);
 
         }
     }

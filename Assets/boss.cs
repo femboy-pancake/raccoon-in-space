@@ -2,30 +2,36 @@ using UnityEngine;
 
 public class boss : MonoBehaviour
 {
-    public int maxHealth = 3;
-    int currentHealth;
+    
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        currentHealth = maxHealth;
+        
     }
 
-    
 
-    public void TakeDamage(int Damage)
+
+    private void OnTriggerEnter2D(Collider2D Other)
     {
-
-        
-
-        currentHealth = currentHealth - Damage;
-        if (currentHealth <= 0)
+        if (Other.tag == "Player")
         {
-            Destroy(gameObject);
 
+            
+            Destroy(gameObject);
+        }
+
+        GameObject[] BossFloor = GameObject.FindGameObjectsWithTag("Boss Floor");
+        foreach (GameObject obj in BossFloor)
+        {
+            obj.GetComponent<BoxCollider2D>().enabled = false;
+            obj.GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 
-    
+
+
+
+
 
 }

@@ -19,7 +19,13 @@ public class GameManager : MonoBehaviour
     public bool button2;
     public GameObject[] floor;
     public GameObject[] roof;
-
+    public GameObject bomb;
+    public GameObject GlassWall;
+    public GameObject[] bosswall;
+    public GameObject fireball1;
+    public GameObject fireball2;
+    public GameObject thunderbolt;
+     
     private void Start()
     {
         if(main == null)
@@ -50,7 +56,44 @@ public class GameManager : MonoBehaviour
         playerscript.isUpsidedown = false;
         ridgidbody.linearVelocity = Vector3.zero;
         MoreClouds = GameObject.FindGameObjectsWithTag("spawncloud");
+
+
         
+
+        Destroy(fireball1);
+        Destroy(fireball2);
+        Destroy(thunderbolt);
+        Destroy(bomb);
+        GlassWall = GameObject.Find ("glass wall");
+        
+
+        if (GlassWall != null)
+        {
+            GlassWall.GetComponent<glass>().currentHealth = 3;
+            GlassWall.GetComponent<BoxCollider2D>().enabled = true;
+            GlassWall.GetComponent<PolygonCollider2D>().enabled = true;
+            GlassWall.GetComponent<SpriteRenderer>().enabled = true;
+        }
+
+
+
+
+        if (bosswall != null)
+        {
+            foreach (GameObject bosswall in bosswall)
+            {
+                bosswall.GetComponent<BoxCollider2D>().enabled = true;
+                bosswall.GetComponent<SpriteRenderer>().enabled = true;
+                
+            }
+        }
+
+
+
+
+
+
+
         if (collectobject != null)
             collectobject.SetActive(true);
 
@@ -62,6 +105,11 @@ public class GameManager : MonoBehaviour
                 wall.GetComponent<SpriteRenderer>().enabled = true;
             }
         }
+
+
+
+
+
 
 
         if (MoreClouds != null)
@@ -108,6 +156,16 @@ public class GameManager : MonoBehaviour
         DestroyableWall = GameObject.FindGameObjectsWithTag("DestroyableWall");
         collectobject = GameObject.Find("key");
         roof = GameObject.FindGameObjectsWithTag("roof");
+        
+        GlassWall = GameObject.Find("glass");
+        bosswall = GameObject.FindGameObjectsWithTag("BossWall");
+        fireball1 = GameObject.Find("fireball for boss_0 1(Clone)");
+        fireball2 = GameObject.Find("fireball2(Clone)");
+        thunderbolt = GameObject.Find("boss thundercloud warning_0(Clone)");
+
+
+
+
 
 
     }
@@ -128,6 +186,33 @@ public class GameManager : MonoBehaviour
         {
             roof = GameObject.FindGameObjectsWithTag("roof");
         }
+
+
+
+
+
+        if (fireball1 == null)
+        {
+            fireball1 = GameObject.Find("fireball for boss_0 1(Clone)");
+        }
+
+        if (fireball2 == null)
+        {
+            fireball2 = GameObject.Find("fireball2(Clone)");
+        }
+
+        if (thunderbolt == null)
+        {
+            thunderbolt = GameObject.Find("boss thundercloud warning_0(Clone)");
+        }
+
+
+
+        if (bomb == null)
+        {
+            bomb = GameObject.Find("bomb for boss_0 1(Clone)");
+        }
+        
     }
 
 

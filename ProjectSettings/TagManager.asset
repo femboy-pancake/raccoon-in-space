@@ -17,6 +17,9 @@ TagManager:
   - Evil Raccoon
   - roof
   - thunder
+  - bomb
+  - BossWall
+  - Boss Floor
   layers:
   - Default
   - TransparentFX
