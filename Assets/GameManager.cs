@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     public GameObject fireball1;
     public GameObject fireball2;
     public GameObject thunderbolt;
-     
+    public GameObject SpinnerSpawn;
     private void Start()
     {
         if(main == null)
@@ -57,8 +57,17 @@ public class GameManager : MonoBehaviour
         ridgidbody.linearVelocity = Vector3.zero;
         MoreClouds = GameObject.FindGameObjectsWithTag("spawncloud");
 
+        
+        if (SpinnerSpawn != null)
+        {
+            SpinnerSpawn.GetComponent<PolygonCollider2D>().enabled = false;
+            SpinnerSpawn.GetComponent<SpriteRenderer>().enabled = false;
+        }
+        
 
         
+
+
 
         Destroy(fireball1);
         Destroy(fireball2);
@@ -89,7 +98,7 @@ public class GameManager : MonoBehaviour
         }
 
 
-
+       
 
 
 
@@ -136,8 +145,8 @@ public class GameManager : MonoBehaviour
 
         foreach (GameObject roof in roof)
         {
-            roof.GetComponent<BoxCollider2D>().enabled = false;
-            roof.GetComponent<SpriteRenderer>().enabled = false;
+            roof.GetComponent<BoxCollider2D>().enabled = true;
+            roof.GetComponent<SpriteRenderer>().enabled = true;
         }
 
     }
@@ -162,7 +171,7 @@ public class GameManager : MonoBehaviour
         fireball1 = GameObject.Find("fireball for boss_0 1(Clone)");
         fireball2 = GameObject.Find("fireball2(Clone)");
         thunderbolt = GameObject.Find("boss thundercloud warning_0(Clone)");
-
+        SpinnerSpawn = GameObject.Find("spinnerspawn");
 
 
 
@@ -170,7 +179,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private void Update()
+    void Update()
     {
         if (spawnPosition == null)
         {
@@ -188,7 +197,10 @@ public class GameManager : MonoBehaviour
         }
 
 
-
+        if (SpinnerSpawn == null)
+        {
+            SpinnerSpawn = GameObject.Find("spinnerspawn");
+        }
 
 
         if (fireball1 == null)
@@ -212,7 +224,12 @@ public class GameManager : MonoBehaviour
         {
             bomb = GameObject.Find("bomb for boss_0 1(Clone)");
         }
-        
+
+        if (bosswall == null)
+        {
+            bosswall = GameObject.FindGameObjectsWithTag("BossWall");
+        }
+
     }
 
 

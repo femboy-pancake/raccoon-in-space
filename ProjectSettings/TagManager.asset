@@ -20,6 +20,7 @@ TagManager:
   - bomb
   - BossWall
   - Boss Floor
+  - spinnerspawn
   layers:
   - Default
   - TransparentFX

@@ -23,6 +23,7 @@ public class LightbulbScript : MonoBehaviour
         if (other.tag == "Player")
         {
             Light();
+            light.GetComponent<Light2D>().enabled = true;
             //enable the entire room's sprites
             //change a few sprites from 1 color to other
             //keep background, raccoon and lightbulb the same
