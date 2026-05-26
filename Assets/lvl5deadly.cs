@@ -1,15 +1,25 @@
 using UnityEngine;
+using System.Collections;
 
 public class lvl5deadly : MonoBehaviour
 {
+    public GameObject[] Cloud1;
+    public GameObject[] Cloud2;
+    public GameObject Cloud3;
     //public playerJumpScript playerjumpscript;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       // playerjumpscript = GameObject.Find("Player (2)").GetComponent<playerJumpScript>();
+      
 
     }
 
+    private void Awake()
+    {
+        Cloud1 = GameObject.FindGameObjectsWithTag("Cloud1");
+        Cloud2 = GameObject.FindGameObjectsWithTag("Cloud2");
+        Cloud3 = GameObject.FindGameObjectWithTag("Cloud3");
+    }
     // Update is called once per frame
     void Update()
     {
@@ -20,15 +30,28 @@ public class lvl5deadly : MonoBehaviour
     {
         if (Other.tag == "Player")
         {
-            /*  Other.gameObject.transform.position = new Vector3(-14.27f, -3.45f, 8.94f);
-              Other.gameObject.transform.parent.position = new Vector3(-14.27f, -3.45f, 8.94f);
-              Physics2D.gravity = new Vector2(0, -9.8f);
+            Cloud1[0].GetComponent<BoxCollider2D>().enabled = false;
+            Cloud1[1].GetComponent<BoxCollider2D>().enabled = false;
+            Cloud2[0].GetComponent<BoxCollider2D>().enabled = false;
+            Cloud2[1].GetComponent<BoxCollider2D>().enabled = false;
+            Cloud3.GetComponent<BoxCollider2D>().enabled = false;
 
-              Other.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
-              Other.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
-              playerjumpscript.jumpableSurface = Vector2.down; */
+
+            Cloud1[0].GetComponent<SpriteRenderer>().enabled = false;
+            Cloud1[1].GetComponent<SpriteRenderer>().enabled = false;
+            Cloud2[0].GetComponent<SpriteRenderer>().enabled = false;
+            Cloud2[1].GetComponent<SpriteRenderer>().enabled = false;
+            Cloud3.GetComponent<SpriteRenderer>().enabled = false;
+            //start cloud Coroutine
+            Cloud1[0].GetComponent<cloudspawn>().Restart();
+            Cloud1[1].GetComponent<cloudspawn>().Restart();
+            Cloud2[0].GetComponent<cloudspawn2>().Restart();
+            Cloud2[1].GetComponent<cloudspawn2>().Restart();
+            Cloud3.GetComponent<cloudspawn3>().Restart();
             GameManager.main.RestartLevel();
 
         }
     }
+
+    
 }

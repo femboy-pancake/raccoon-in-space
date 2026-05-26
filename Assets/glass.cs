@@ -10,6 +10,7 @@ public class glass : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+
     }
 
 
@@ -29,6 +30,7 @@ public class glass : MonoBehaviour
         {
 
             currentHealth = currentHealth - 1;
+        
             Destroy(Other.gameObject);
         }
     }

@@ -21,6 +21,10 @@ TagManager:
   - BossWall
   - Boss Floor
   - spinnerspawn
+  - Cloud1
+  - Cloud2
+  - Cloud3
+  - Glass
   layers:
   - Default
   - TransparentFX

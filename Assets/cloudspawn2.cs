@@ -18,4 +18,9 @@ public class cloudspawn2 : MonoBehaviour
         gameObject.GetComponent<SpriteRenderer>().enabled = true;
     }
 
+    public void Restart()
+    {
+        StartCoroutine(Wait(1f));
+    }
+
 }
