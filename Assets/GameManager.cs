@@ -181,6 +181,12 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        //RESTARTKNAPP
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            RestartLevel();
+        }
+
         if (spawnPosition == null)
         {
             spawnPosition = GameObject.Find("SpawnPosition").transform;
