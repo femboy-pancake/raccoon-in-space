@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: -442771676911893839}
   - component: {fileID: 1215771427597750511}
   - component: {fileID: -8179714456450701004}
+  - component: {fileID: 5418969170572976933}
+  - component: {fileID: 1919944462259996994}
   m_Layer: 0
   m_Name: bomb for boss_0 1
   m_TagString: bomb
@@ -151,8 +153,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.75
+  m_Offset: {x: -0.005946636, y: -0.19623917}
+  m_Radius: 0.6370139
 --- !u!114 &-8179714456450701004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,3 +170,41 @@ MonoBehaviour:
   BombSprite:
   - {fileID: -4846335941017984259, guid: f9c8b6e13af05934791a7d99708a8a67, type: 3}
   - {fileID: -9157601222113067920, guid: e503e4ac2cc4ab94e8bf71fbbd0af700, type: 3}
+--- !u!111 &5418969170572976933
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6096442054707578633}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: 796eb4523e8ec904896cc96546bd842c, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
+--- !u!95 &1919944462259996994
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6096442054707578633}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c67fb43839d9bec46b8e5c112ec733c4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

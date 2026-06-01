@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
         Destroy(fireball2);
         Destroy(thunderbolt);
         Destroy(bomb);
-        GlassWall = GameObject.Find ("glass wall");
+        GlassWall = GameObject.Find ("glass wall red_0");
         
 
         if (GlassWall != null)
@@ -84,7 +84,7 @@ public class GameManager : MonoBehaviour
             GlassWall.GetComponent<SpriteRenderer>().enabled = true;
         }
 
-
+        
 
 
         if (bosswall != null)
@@ -93,7 +93,7 @@ public class GameManager : MonoBehaviour
             {
                 bosswall.GetComponent<BoxCollider2D>().enabled = true;
                 bosswall.GetComponent<SpriteRenderer>().enabled = true;
-                
+
             }
         }
 

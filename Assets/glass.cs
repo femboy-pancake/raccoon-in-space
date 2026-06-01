@@ -31,7 +31,7 @@ public class glass : MonoBehaviour
 
             currentHealth = currentHealth - 1;
         
-            Destroy(Other.gameObject);
+            Destroy(Other.gameObject,0.40f);
         }
     }
 
