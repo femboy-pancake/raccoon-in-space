@@ -18691,6 +18691,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 230347417}
     m_Modifications:
+    - target: {fileID: 141701323228320033, guid: ea16ae0fff11f4846b7cc36a7e23ccff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 141701323228320033, guid: ea16ae0fff11f4846b7cc36a7e23ccff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.349
+      objectReference: {fileID: 0}
+    - target: {fileID: 141701323228320033, guid: ea16ae0fff11f4846b7cc36a7e23ccff, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.63
+      objectReference: {fileID: 0}
     - target: {fileID: 2841444913573476840, guid: ea16ae0fff11f4846b7cc36a7e23ccff, type: 3}
       propertyPath: m_Name
       value: Player (2)
@@ -18845,11 +18857,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9136190578554795825, guid: ea16ae0fff11f4846b7cc36a7e23ccff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.47
+      value: 38.29
       objectReference: {fileID: 0}
     - target: {fileID: 9136190578554795825, guid: ea16ae0fff11f4846b7cc36a7e23ccff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.36
+      value: -8.71
       objectReference: {fileID: 0}
     - target: {fileID: 9136190578554795825, guid: ea16ae0fff11f4846b7cc36a7e23ccff, type: 3}
       propertyPath: m_LocalPosition.z
@@ -27322,6 +27334,8 @@ GameObject:
   - component: {fileID: 901017288}
   - component: {fileID: 901017287}
   - component: {fileID: 901017286}
+  - component: {fileID: 901017290}
+  - component: {fileID: 901017289}
   m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
@@ -28306,6 +28320,78 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!66 &901017289
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901017284}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths: []
+  m_CompositePaths:
+    m_Paths: []
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+  m_UseDelaunayMesh: 0
+  m_CompositeGameObject: {fileID: 901017284}
+--- !u!50 &901017290
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901017284}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &903472052
 GameObject:
   m_ObjectHideFlags: 0
@@ -45106,7 +45192,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1526655228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60146,7 +60232,7 @@ Transform:
   m_GameObject: {fileID: 2050868152}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.15, y: -4.71, z: 0.007062145}
+  m_LocalPosition: {x: 6.99, y: 3.13, z: 0.007062145}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
